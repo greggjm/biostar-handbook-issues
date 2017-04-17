@@ -1,5 +1,8 @@
 #Bash Ubuntu on Windows 10: Install Package (winstall_v3.sh)
 #
+#Requirements: 
+#Download registered GATK file and move to file named "unix" on desktop.
+#
 #Notes: 
 #Check password requirements when executing the script.
 #Bugs:
