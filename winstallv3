@@ -111,6 +111,7 @@ gatk-register ~/bin/miniconda3/bin/$gatk_file --noversioncheck
 # PART 3:
 #
 # Create env for packages requiring python 2.7
+set +u -e -f -o pipefail
 conda create --name -y bioinfo python=2.7
 # Activate environment to install packages.
 source activate bioinfo
@@ -120,6 +121,7 @@ conda install -y tophat
 conda install -y cutadapt
 # Deactivate environment.
 source deactivate bioinfo
+set -u -e -f -o pipefail
 # Install Entrez-Direct from source.
 cd ~/src
 curl ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/edirect.zip > ~/src/edirect.zip
