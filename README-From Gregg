@@ -1,0 +1,28 @@
+Outline of script:
+
+PART 1:Initial Set-Up
+
+Update /etc/hosts file
+Link desktop
+WSL update/upgrade
+Install basic packages
+Download profile
+Create directories for (src, bin, sra)
+Download biostar scripts
+Download and install miniconda
+Update ~/.bashrc to extend path
+
+Part 2: Install Required Programs
+Add channels to conda
+Install list of programs from biostar handbook
+# http://data.biostarhandbook.com/install/conda.txt
+# Install others not explicitly mentioned in list as well.
+register GATK (requires download per instructions)
+# https://software.broadinstitute.org/gatk/download/
+
+Part 3: Install Remaining Tools
+Create Enviroment for Python 2.7
+Activate environment
+Install Hisat2, Tophat, Cutadapt
+Deactivate environment
+Install Entrez-direct from source
